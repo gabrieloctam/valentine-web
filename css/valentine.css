@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fceff3; /* Warna latar belakang yang lembut */
+}
+
+header {
+  background-color: #ff4d6e; /* Warna merah muda */
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  animation: heartbeat 1.5s infinite;
+}
+
+.content-description {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.content img {
+  width: 450px;
+  height: 250px;
+}
+
+footer {
+  background-color: #ff4d6e; /* Warna merah muda */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 15px;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+
+  footer {
+    padding: 8px;
+  }
+}
