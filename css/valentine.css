@@ -19,6 +19,18 @@
   animation: animasi 1s;
 }
 
+/* About */
+.container .gift a {
+  margin: 10px;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.container .gift a:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
 /* Project */
 #projects {
   background-color: rgb(191, 230, 247);
